@@ -7,27 +7,67 @@
 <body>
 
 <div class="spacer">
-
+<div class="hamburgerbutton" id="hamburgerbutton"></div>
 <div class="lefttitle">
 	<div class="logo"></div>
-	<div class="button">Home</div>
-	<div class="button">About</div>
-	<div class="button">Gallery</div>
-	<div class="button">Contact</div>
+	<a href=""><div class="button">Home</div></a>
+	<a href=""><div class="button">About</div></a>
+	<a href=""><div class="button">Gallery</div></a>
+	<a href=""><div class="button">Contact</div></a>
 
 </div>
 	<h1 class="name">WalleyCorps</h1>
 </div>
+<div class="hambox">
+	<div class="hambutton">Home</div>
+	<div class="hambutton">About</div>
+	<div class="hambutton">Gallery</div>
+	<div class="hambutton">Contact</div>
+</div>
 <div class="maincontainer">
-<div class="modalcontainer">
-<div class="modal">MYMODALTEXT</div>
+<div class="modalcontainer" id="modalcontainer">
+<div class="modal">
+	<div class="esctoclose">Press Esc to close</div>
+	<div class="xout">X</div>
+	<h2 class="modalheader topmodalheader">Do you like WalleyCorps?</h2>
+	<h2 class="modalheader">Sign up for our newsletter!</h2>
+	<form>
+		
+		<div class="modaltext">Email:</div>
+		<input class="formdata" type="text" name="email" placeholder="johndoe@example.com">
+		<div class="modaltext">Password:</div>
+		<input class="formdata" type="text" name="password" placeholder="password">
+		<div class="modaltext">Re-Enter Password:</div>
+		<input class="formdata" placeholder="password" type="text" name="re-enter-password">
+		
+	</form>
+	<div class="submit modaltext">Submit</div>
+		<div class="modallogo"></div>
+</div>
 </div>
 </div>
 <div class="content">
 	<div class="carousel" id="carousel"></div>
 </div>
 <h2 class="provider">Your #1 Provider in Home Construction</h2>
-<div class="secondcontent"></div>
+<div class="secondcontent">
+	<h3 class="recentprojectsheader">Recent Projects</h3>
+	<div class="recentproject">
+		<div class="project project1"></div>
+		<div class="project project2"></div>
+		<div class="project project3"></div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="footercontainer">
+		<a href="index.html"><div class="Home">Home</div></a>
+		<a href=""><div class="About">About</div></a>
+		<a href=""><div class="Gallery">Gallery</div></a>
+		<a href=""><div class="Contact">Contact</div></a>
+	</div>
+	<div class="footerlogo"></div>
+</div>
 
 <div id="overlays" class="overlays"></div>
 <script src="scripts.js"></script>
